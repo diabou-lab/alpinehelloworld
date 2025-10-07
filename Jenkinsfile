@@ -1,5 +1,5 @@
 pipeline {
-     environnement {
+     environment {
         IMAGE_NAME = "alpinehelloworld"
         IMAGE_TAG = "latest"
         STAGING = "eazydia-staging"
@@ -57,7 +57,7 @@ pipeline {
 
             }
           agent any
-          environnement {
+          environment {
             HEROKU_API_KEY = credentials('heroku_api_key')
           }
           steps {
@@ -78,7 +78,7 @@ pipeline {
 
             }
           agent any
-          environnement {
+          environment {
             HEROKU_API_KEY = credentials('heroku_api_key')
           }
           steps {
